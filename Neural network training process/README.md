@@ -1,4 +1,4 @@
-# Lab 1 Neural network training process
+# Neural network training process
 [TOC]
 ## Inner Product Forward (Forward-propagation)
 ![](https://i.imgur.com/aMM95m6.jpg)
