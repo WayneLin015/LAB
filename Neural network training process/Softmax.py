@@ -155,7 +155,7 @@ for i in range(iteration):
     tacc = (tpred_index == np.argmax(train_data_lab,axis=1)).sum()
     train_accuracy.append(tacc/480)
     
-    print('epoch: %d loss：%f  tacc: %f validacc: %f' %(i,loss,tacc/480,vacc/120))
+    print('iteration: %d loss：%f  tacc: %f validacc: %f' %(i,loss,tacc/480,vacc/120))
 
 
 testInner1 = InnerProduct_For(test_data_img,w_1,b_1)
