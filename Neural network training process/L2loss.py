@@ -188,7 +188,7 @@ for i in range(iteration):
     tpred_index = np.argmax(Inner2,axis=1)
     tacc = (tpred_index == np.argmax(train_data_lab,axis=1)).sum()
     train_accuracy.append(tacc/480)
-    print(i,loss,tacc/480,vacc/120)
+    print('iteration: %d loss：%f  tacc: %f validacc: %f' %(i,loss,tacc/480,vacc/120))
 
 testInner1 = InnerProduct_ForProp(test_data_img,w_1,b_1)
 testRelu = ReLu_ForProp(testInner1)
